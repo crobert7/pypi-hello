@@ -1,6 +1,8 @@
 name: python-helloworld
 
-on: [push]
+on:
+  psuh:
+    branches: [main]
 
 tags: latest
 
