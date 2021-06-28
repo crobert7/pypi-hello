@@ -5,11 +5,10 @@ on:
     branches: [main]
 
 jobs:
+  runs-on: ubuntu-latest
   build:
      steps:
-      matrix: 
       - platform: [linux/amd64, linux/arm64]
-        runs-on: ubuntu-latest
     - uses: actions/checkout@v2
     - uses: actions/setup-python@v2
       with:
