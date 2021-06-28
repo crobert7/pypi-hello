@@ -3,4 +3,4 @@ LABEL maintainer="Roberto Garcia"
 COPY . /app
 WORKDIR /app
 RUN pip install -r requirements.txt
-CMD ["flask", "run"]
+CMD ["python", "app.py"]
