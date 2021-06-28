@@ -4,12 +4,12 @@ on:
   push:
     branches: [main]
 
-matrix: 
-    platform: [linux/amd64, linux/arm64]
-    runs-on: ${{ matrix.platform }}
-
 jobs:
   steps:
+
+    matrix: 
+    platform: [linux/amd64, linux/arm64]
+    runs-on: ${{ matrix.platform }}
 
     uses: actions/checkout@v2
     uses: actions/setup-python@v2
